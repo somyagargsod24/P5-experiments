@@ -1,18 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My P5 Sketches</title>
+  <meta charset="UTF-8">
+  <title>My P5.js Sketches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+      margin-bottom: 30px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .sketch-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .card a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My P5 Sketches</h1>
-  <p>Click below to view them:</p>
-  <ul>
-    <li><a href="rectangle/">rectangle</a></li>
-    <li><a href="radiating lines/">radiating%20lines</a></li>
-    <li><a href="shapes/">shapes</a></li>
-    <li><a href="checkerboard/">checkerboard</a></li>
-    <li><a href="animation1/">animation1</a></li>
-  </ul>
+  <header>
+    <h1>My P5.js Sketch Collection</h1>
+    <p>Click any card to explore a sketch</p>
+  </header>
+
+  <div class="sketch-list">
+    <div class="card">
+      <a href="rectangle/">Rectangle Sketch</a>
+    </div>
+    <div class="card">
+      <a href="radiating%20lines/">Radiating Lines</a>
+    </div>
+    <div class="card">
+      <a href="shapes/">Shapes</a>
+    </div>
+    <div class="card">
+      <a href="checkerboard/">Checker Board</a>
+    </div>
+    <div class="card">
+      <a href="animation1/">Animation 1</a>
+    </div>
+  </div>
 </body>
 </html>
+
