@@ -6,99 +6,81 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
+      padding: 40px;
       background: #111;
-      color: #eee;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
+      color: #e0e0e0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
     }
 
     h1 {
-      font-size: 3rem;
-      margin: 0;
-      letter-spacing: 2px;
-      color: #f0f0f0;
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
     }
 
     p {
-      margin: 10px 0 0;
-      font-size: 1rem;
-      color: #aaa;
+      color: #888;
+      margin-bottom: 40px;
+      font-size: 0.9rem;
     }
 
-    .sketch-list {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      width: 90%;
-      max-width: 1000px;
-      padding: 40px 0;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
     }
 
-    .card {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 12px;
-      padding: 40px 20px;
-      text-align: center;
-      transition: all 0.3s ease;
-      cursor: pointer;
+    li {
+      border-top: 1px solid #333;
+      padding: 15px 10px;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      transition: background 0.2s, color 0.2s;
     }
 
-    .card:hover {
-      background: #222;
-      transform: translateY(-6px);
-      box-shadow: 0 6px 20px rgba(255,255,255,0.05);
-    }
-
-    .card a {
+    li a {
       text-decoration: none;
-      font-size: 1.2rem;
-      color: #eee;
-      font-weight: 600;
-      letter-spacing: 1px;
-      transition: color 0.2s;
+      color: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
     }
 
-    .card a:hover {
-      color: #999;
+    li:hover {
+      background: #1c1c1c;
+      color: #fff;
     }
 
     footer {
-      margin-top: auto;
-      padding: 20px;
-      font-size: 0.8rem;
+      margin-top: 60px;
+      font-size: 0.7rem;
       color: #555;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>My P5.js Sketches</h1>
-    <p>a collection of five experiments</p>
-  </header>
+  <h1>Sketches</h1>
+  <p>a growing collection of code experiments</p>
 
-  <div class="sketch-list">
-    <div class="card"><a href="rectangle/">Rectangle</a></div>
-    <div class="card"><a href="radiating%20lines/">Radiating Lines</a></div>
-    <div class="card"><a href="shapes/">Shapes</a></div>
-    <div class="card"><a href="checkerboard/">Checker Board</a></div>
-    <div class="card"><a href="animation1/">Animation 1</a></div>
-  </div>
+  <ul>
+    <li><a href="rectangle/">Rectangle</a></li>
+    <li><a href="radiating%20lines/">Radiating Lines</a></li>
+    <li><a href="shapes/">Shapes</a></li>
+    <li><a href="checkerboard/">Checker Board</a></li>
+    <li><a href="animation1/">Animation 1</a></li>
+  </ul>
 
   <footer>
-    <p>© 2025 | minimal experiments in code</p>
+    © 2025 — minimal experiments in grey
   </footer>
 </body>
 </html>
+
+
 
 
