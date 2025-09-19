@@ -6,55 +6,40 @@
   <style>
     body {
       margin: 0;
-      padding: 60px;
+      padding: 60px 80px;
       background: #111;
       color: #e5e5e5;
       font-family: "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.8rem;
       font-weight: 300;
-      margin-bottom: 8px;
-      color: #f5f5f5;
+      margin: 0 0 10px 0;
+      letter-spacing: 1px;
     }
 
     p {
       color: #777;
-      margin-bottom: 40px;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
+      margin: 0 0 60px 0;
+      max-width: 500px;
     }
 
-    ol {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      counter-reset: item;
-    }
-
-    li {
-      margin: 10px 0;
-      font-size: 1rem;
-      position: relative;
-      padding-left: 30px;
-    }
-
-    li::before {
-      counter-increment: item;
-      content: counter(item, decimal-leading-zero);
-      position: absolute;
-      left: 0;
-      color: #555;
-      font-size: 0.85rem;
-      letter-spacing: 1px;
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
     }
 
     a {
       text-decoration: none;
-      color: #bbb;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #ccc;
       position: relative;
-      padding-bottom: 2px;
+      padding-bottom: 3px;
+      transition: color 0.3s;
     }
 
     a::after {
@@ -62,12 +47,10 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 100%;
+      width: 0%;
       height: 1px;
-      background: #555;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.3s ease;
+      background: #888;
+      transition: width 0.3s ease;
     }
 
     a:hover {
@@ -75,29 +58,27 @@
     }
 
     a:hover::after {
-      transform: scaleX(1);
-      transform-origin: left;
+      width: 100%;
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: 100px;
       font-size: 0.7rem;
       color: #555;
-      text-align: center;
     }
   </style>
 </head>
 <body>
   <h1>Sketches</h1>
-  <p>a growing collection of code experiments</p>
+  <p>A growing collection of code experiments — a personal archive in progress.</p>
 
-  <ol>
-    <li><a href="rectangle/">Rectangle</a></li>
-    <li><a href="radiating%20lines/">Radiating Lines</a></li>
-    <li><a href="shapes/">Shapes</a></li>
-    <li><a href="checkerboard/">Checker Board</a></li>
-    <li><a href="animation1/">Animation 1</a></li>
-  </ol>
+  <nav>
+    <a href="rectangle/">Rectangle</a>
+    <a href="radiating%20lines/">Radiating Lines</a>
+    <a href="shapes/">Shapes</a>
+    <a href="checkerboard/">Checker Board</a>
+    <a href="animation1/">Animation 1</a>
+  </nav>
 
   <footer>
     © 2025 — minimal experiments in grey
